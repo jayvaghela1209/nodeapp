@@ -5,7 +5,7 @@ const PORT = process.env.PORT ?? 8081
 
 
 app.get('/',(req, res)=>{
-    return res.json({ mes: "Hello from Node JS" })
+    return res.json({ mes: "Hello from Node JS V1" })
 })
 
 app.listen(PORT, ()=>{
