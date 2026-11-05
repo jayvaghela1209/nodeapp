@@ -20,6 +20,7 @@ jobs:
           username: sir
           key: ${{ secrets.SSH_KEY }}
           script: |
+            set -e
             cd /home/sir/nodeapp
             git pull 
             docker compose up -d --build
