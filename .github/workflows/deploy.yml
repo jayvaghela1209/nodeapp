@@ -20,8 +20,7 @@ jobs:
           username: sir
           key: ${{ secrets.SSH_KEY }}
           script: |
-            set -e
             git clone https://github.com/jayvaghela1209/nodeapp.git
-            cd /home/sir/nodeapp
+            cd /home/jay-vaghela/nodeapp
             git pull 
             docker compose up -d --build
