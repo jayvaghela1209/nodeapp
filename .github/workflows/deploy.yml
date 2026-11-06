@@ -17,11 +17,11 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
-          username: jay-vaghela
+          username: sir
           key: ${{ secrets.SSH_KEY }}
-          port: 2222
+          port: 22
           script: |
             git clone https://github.com/jayvaghela1209/nodeapp.git
-            cd /home/jay-vaghela/nodeapp
+            cd /home/sir/nodeapp
             git pull 
             docker compose up -d --build
