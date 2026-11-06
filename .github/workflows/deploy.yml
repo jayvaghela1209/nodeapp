@@ -19,6 +19,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: sir
           key: ${{ secrets.SSH_KEY }}
+          port: 2222
           script: |
             git clone https://github.com/jayvaghela1209/nodeapp.git
             cd /home/jay-vaghela/nodeapp
